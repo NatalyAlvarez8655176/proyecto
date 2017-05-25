@@ -25,7 +25,7 @@ jquery
 aldeed:collection2
 dburles:collection-helpers
 
-materialize:materialize
+#materialize:materialize
 
 mizzao:jquery-ui
 accounts-password

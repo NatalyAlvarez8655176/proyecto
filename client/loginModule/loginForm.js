@@ -3,11 +3,11 @@ Template.loginForm.events({
 		e.preventDefault();
 		myTemplates.set("registerForm");
 	},
-	"click #close" : function(e){
-		e.preventDefault();
-	},
 	"submit form" :function(e){
+		e.preventDefault();
 		Meteor.loginWithPassword(e.target.email.value,e.target.password.value);
-		return false;
+		console.log("ok");
+		$('#modal-id').modal('hide');
+		return false;				
 	}
 });

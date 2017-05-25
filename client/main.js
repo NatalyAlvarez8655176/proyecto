@@ -5,6 +5,7 @@ Template.main.helpers({
 })
 Template.main.events({
 	"click #logout" : function(){
+		$('#modal-id').modal('hide');
 		Meteor.logout();
 	}
 })
